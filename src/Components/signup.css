@@ -1,0 +1,63 @@
+/* src/Components/signup.css */
+
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: rgb(139, 197, 236);
+}
+
+.signup-image {
+  flex: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assests/loginn.webp");
+  height:400px;
+  background-repeat: no-repeat;/* Optional: for a light background */
+  padding: 160px;
+} 
+
+/* .signup-image {
+  flex: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hwb(206 31% 4%);
+  background-image: url("../assets/loginn.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto; /* Optional: for a light background */
+  /* padding: 160px; */
+/* } */
+
+
+.signup-image img {
+  max-width: 100%;
+  height: 700px;
+}
+
+.signup-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}

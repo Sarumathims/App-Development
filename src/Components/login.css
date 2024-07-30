@@ -1,0 +1,93 @@
+/* Container for the login page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsla(322, 51%, 77%, 0.102);
+  background-image: url("../assests/mobile\ recharge.png");
+}
+
+/* Content wrapper for login and info sections */
+.login-content {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  background-color: hwb(188 46% 8%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(118, 209, 223, 0.1);
+  padding: 20px;
+}
+
+/* Info section styling */
+.info-section {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ddd; /* Light border between info and form section */
+}
+
+.info-section h2 {
+  color: #333; /* Dark color for headings */
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  color: hsl(256, 89%, 47%);
+  font-size: 150%; /* Font size for paragraphs */
+  margin-bottom: 10px;
+}
+
+.info-section ul {
+  padding-left: 20px;
+  color: #666;
+  font-size: 120%;
+}
+
+.info-section ul li {
+  margin-bottom: 5px;
+}
+
+/* Form section styling */
+.form-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-box h1 {
+  color: #333;
+}
+
+.login-box p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Custom button styling */
+.MuiButton-contained {
+  background-color: #007bff; /* Primary color for the button */
+  color: #fff;
+}
+
+.MuiButton-contained:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Link button styling */
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Alert styling */
+.MuiAlert-root {
+  margin-top: 10px;
+}
