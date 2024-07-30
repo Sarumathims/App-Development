@@ -1,0 +1,212 @@
+/* src/Components/About.css */
+
+/* General container styling */
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: hsl(184, 32%, 59%);
+    max-width: 1400px;
+    margin: 0 auto; /* Center align the content */
+  }
+  
+  /* Header styling */
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #4a90e2;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* For decorative elements */
+  }
+  
+  .about-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  
+  .about-header h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-header h5 {
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+  }
+  
+  /* Section styling */
+  .about-section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .about-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .about-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Core Values section */
+  .core-values-section {
+    margin-bottom: 40px;
+    background-color: hwb(300 25% 29%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .core-values-section h2 {
+    color: #4a90e2;
+    font-size: 1.75rem;
+    font-weight: bold;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .core-values-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .core-values-list li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1d10cc;
+    border-radius: 10px;
+    border-left: 5px solid #4a90e2;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .core-values-list li::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .core-values-list li:nth-child(1)::before {
+    content: 'I';
+  }
+  
+  .core-values-list li:nth-child(2)::before {
+    content: 'I';
+  }
+  
+  .core-values-list li:nth-child(3)::before {
+    content: 'C';
+  }
+  
+  .core-values-list li:hover {
+    background-color: #e3f2fd;
+    transform: translateX(5px);
+  }
+  
+  .core-values-list li h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 60px;
+  }
+  
+  .core-values-list li p {
+    margin: 5px 0;
+    color: #666;
+    margin-left: 60px;
+  }
+  
+  /* Card styling */
+  .MuiCard-root {
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .MuiCard-root:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .MuiCardContent-root {
+    padding: 20px;
+  }
+  
+  .MuiTypography-h6 {
+    font-weight: bold;
+    color: #4a90e2;
+  }
+  
+  .MuiTypography-body1 {
+    color: #666;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+    }
+  
+    .about-header h1 {
+      font-size: 2rem;
+    }
+  
+    .about-header h5 {
+      font-size: 1rem;
+    }
+  
+    .about-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .core-values-list li h3 {
+      font-size: 1.1rem;
+    }
+  
+    .core-values-list li p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* src/Components/Navbar.css */
+
+.navbar {
+    background-color: hsl(276, 56%, 38%); /* Updated background color */
+    padding: 10px 20px; /* Added padding on left and right for spacing */
+    position: relative; /* Ensure relative positioning for adjustments */
+  }
+  
+  /* Navbar items container styling */
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    position: relative; /* Position relative to adjust alignment */
+    left: 20px; /* Move the navbar items slightly to the left */
+  }
+  
+  /* Navbar list item styling */
+  .navbar-nav li {
+    margin: 0 15px; /* Spacing between items */
+  }
+  
+  /* Navbar link styling */
+  .navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+  }
+  
+  /* Navbar link hover effects */
+  .navbar-nav a:hover {
+    text-decoration: underline;
+    color: #e3f2fd; /* Light color on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack items vertically on small screens */
+      left: 10px; /* Adjust left offset for smaller screens */
+    }
+  
+    .navbar-nav li {
+      margin: 10px 0; /* Adjust margin for vertical alignment */
+    }
+  
+    .navbar-nav a {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  
